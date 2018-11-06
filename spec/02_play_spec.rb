@@ -1,5 +1,4 @@
 require_relative '../lib/tic_tac_toe.rb'
-
 describe './lib/tic_tac_toe.rb' do
   describe TicTacToe do
     describe '#play' do
@@ -88,7 +87,6 @@ describe './lib/tic_tac_toe.rb' do
         allow($stdout).to receive(:puts)
 
         expect($stdout).to receive(:puts).with("Congratulations X!")
-
         game.play
       end
 

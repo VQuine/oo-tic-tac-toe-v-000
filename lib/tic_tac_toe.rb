@@ -1,3 +1,6 @@
+
+
+
 # this class is the blueprint for each game, defining objects and behaviors
 class TicTacToe
 
@@ -38,7 +41,11 @@ def move(index, token = "X")
 end
 
 def position_taken?(index)
-  @board[index.to_i] == "X" || @board[index.to_i] == "O"
+  if @board[index.to_i] == "X" || @board[index.to_i] == "O"
+    return true
+  else
+    return false
+  end
 end
 
 def valid_move?(index)
@@ -108,13 +115,17 @@ def play()
   until over?()
     turn()
     draw?()
+
   end
   if !won?() && !draw?() && !over?()
       play()
+
     elsif won?() && over?()
       puts "Congratulations #{winner().to_s}!"
+
     else draw?()
       puts "Cat's Game!"
+
   end
 end
 
