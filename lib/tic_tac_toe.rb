@@ -96,11 +96,11 @@ end
 def winner()
   if won?()
     win = won?()
-      if @board[win[0]] == "X"
+      if @board[win[1]] == "X"
         return "X"
-      elsif @board[win[0]] == "O"
+      elsif @board[win[1]] == "O"
         return "O"
-      else @board[win[0]] != "X" && @board[win[0]] != "O" #srsly..this is like ducttape over a huge hole
+      else @board[win[1]] != "X" && @board[win[0]] != "O" #srsly..this is like ducttape over a huge hole
         return nil
       end
   end
