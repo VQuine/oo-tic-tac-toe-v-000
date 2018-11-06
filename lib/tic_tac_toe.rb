@@ -116,7 +116,7 @@ def play()
   if !won?() && !draw?()
       play()
 
-    elsif won?() && over?()
+    elsif won?()
       puts "Congratulations #{winner()}!"
 
     else draw?()
