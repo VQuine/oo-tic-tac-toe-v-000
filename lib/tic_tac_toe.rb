@@ -121,7 +121,7 @@ def play()
       play()
 
     elsif won?() && over?()
-      puts "Congratulations #{winner().to_s}!"
+      puts "Congratulations PERSON!"
 
     else draw?()
       puts "Cat's Game!"
