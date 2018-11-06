@@ -111,9 +111,9 @@ def play()
   until over?()
     turn()
     draw?()
-
   end
-  if !won?() && !draw?() && !over?()
+
+  if !won?() && !draw?()
       play()
 
     elsif won?() && over?()
